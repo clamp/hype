@@ -1,0 +1,38 @@
+<div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+        <div class="cover-container">
+            <div class="masthead clearfix">
+                <div class="inner">
+                    <h3 class="masthead-brand">Hype</h3>
+                    <nav>
+                        <ul class="nav masthead-nav">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#login">Login</a></li>
+                            <li class="active"><a href="#register">Register</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="well">
+                <h1>Register with Hype</h1>
+                <hr/>
+
+                <form class="form">
+                    <input class="form-control" ng-model="user.username" placeholder="Username"/><br/>
+                    <input type="password" class="form-control" ng-model="user.password" placeholder="Password"/><br/>
+                    <input type="password" class="form-control" ng-model="user.password2" placeholder="Confirm Password"/><br/>
+                    <input type="email" class="form-control" ng-model="email" placeholder="Email"></br>
+                    <input class="form-control" ng-model="firstName" placeholder="First Name"></br>
+                    <input class="form-control" ng-model="lastName" placeholder="Last Name"></br>
+                    <input class="form-control" ng-model="zipcode" placeholder="ZIP Code"></br>
+                    <button class="btn btn-primary" ng-click="register(user)">Register</button>
+                    <br>{{message}}
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
